@@ -1,0 +1,15 @@
+.box{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.control {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.slider {
+	margin: auto;
+	margin-bottom: 14px;
+	margin-top: 40px;
+}

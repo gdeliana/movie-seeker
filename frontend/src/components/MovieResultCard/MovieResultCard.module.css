@@ -1,0 +1,10 @@
+.Card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.CardContent {
+  margin: auto;
+  margin-top: 0;
+}

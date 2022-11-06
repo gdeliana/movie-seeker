@@ -1,0 +1,10 @@
+FROM node:16.16.0
+WORKDIR /usr/api
+COPY package.json ./
+RUN yarn install
+COPY ./src ./src
+COPY tsconfig.json ./
+RUN yarn build
+EXPOSE 8001
+CMD ["yarn", "run" , "start"]
+

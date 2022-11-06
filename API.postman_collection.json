@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "ce20cc8d-ad10-438f-9190-f0c3d1fb0883",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search API",
+			"protocolProfileBehavior": {
+				"disableCookies": false,
+				"followRedirects": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8001/search?title=simpsons&type=movie&year=2022",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "simpsons"
+						},
+						{
+							"key": "type",
+							"value": "movie"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"protocolProfileBehavior": {
+				"disableCookies": false,
+				"followRedirects": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8001/search?title=simpsons&type=movie&year=2022",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "simpsons"
+						},
+						{
+							"key": "type",
+							"value": "movie"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Main API",
+			"protocolProfileBehavior": {
+				"disableCookies": false,
+				"followRedirects": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8001/search?title=simpsons&type=movie&year=2022",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "simpsons"
+						},
+						{
+							"key": "type",
+							"value": "movie"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout API",
+			"protocolProfileBehavior": {
+				"disableCookies": false,
+				"followRedirects": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8001/search?title=simpsons&type=movie&year=2022",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "simpsons"
+						},
+						{
+							"key": "type",
+							"value": "movie"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search OMDB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.omdbapi.com/?type=series&apikey=3e7584ba&s=alien&y=2000",
+					"protocol": "https",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "series"
+						},
+						{
+							"key": "apikey",
+							"value": "3e7584ba"
+						},
+						{
+							"key": "s",
+							"value": "alien"
+						},
+						{
+							"key": "y",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

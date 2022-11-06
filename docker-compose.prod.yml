@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  api_prod:
+    build:
+      context: ./api
+      dockerfile: Dockerfile.prod
+    volumes:
+      - ./api:/usr/api
+      - exclude:/usr/api/node_modules
+    ports:
+      - "8001:8001"
+    env_file:
+      - ./api/.env
+    depends_on:
+      - redis_prod
+    restart: always
+  redis_prod:
+    build:
+      context: ./redis
+      dockerfile: Dockerfile
+    volumes:
+      - ./redis/data:/data
+    restart: always
+  frontend_prod:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.prod
+    ports:
+      - 3000:3000
+    depends_on:
+      - api_prod
+      - redis_prod
+    restart: always
+volumes:
+    exclude:

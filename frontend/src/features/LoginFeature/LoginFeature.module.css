@@ -1,0 +1,14 @@
+.header {
+	margin-bottom: 10px;
+}
+
+.error {
+	background-color: red;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+.box {
+	margin-top: 10px;
+}
